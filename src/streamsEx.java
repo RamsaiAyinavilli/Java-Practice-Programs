@@ -11,19 +11,7 @@ public class streamsEx {
 
         List<Integer> numbers = Arrays.asList(10,4,6,8,7,20,15);
       List<Integer> EvenNumbers = new ArrayList<>();
-//        numbers.add(10);
-//        numbers.add(4);
-//        numbers.add(6);
-//        numbers.add(8);
-//        numbers.add(7);
-//        numbers.add(20);
-//        numbers.add(15);
-//        for(int n : numbers){
-//            if(n%2==0){
-//              EvenNumbers.add(n);
-//            }
-//        }
-//     System.out.println(EvenNumbers);
+
         EvenNumbers = numbers.stream().filter(n->n%2==0).collect(Collectors.toList());
         System.out.println(EvenNumbers);
         EvenNumbers=numbers.stream().filter(n->n%2==0).sorted().collect(Collectors.toList());
